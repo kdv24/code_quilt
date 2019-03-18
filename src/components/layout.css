@@ -236,6 +236,8 @@ h1 {
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
   line-height: 1.1;
+  display: flex;
+  justify-content: center;
 }
 h2 {
   margin-left: 0;
@@ -615,6 +617,72 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+/* CSS Grid setup for homepage */
+/* 
+fr:   sets the column or row to a fraction of the available space,
+auto: sets the column or row to the width or height of its content automatically,
+%:    adjusts the column or row to the percent width of its container. */
+.container {
+  width: 100%;
+  min-height: 100%;
+  background: lightgray;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 20px;
+  /* 
+  grid-gap: 10px 20px; does the same thing as: 
+  grid-row-gap: 10px;
+  grid-column-gap: 20px; */
+
+  /*grid-template-columns: 150px 150px 150px;  //gives three columns that are each 150px wide 
+  grid-template-rows: 150px 150px; // same thing but with row height */
+}
+
+.pretty-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d1 {
+  background: #ffc312;
+  padding: 10px;
+}
+.d2 {
+  background: #ed4c67;
+  padding: 10px;
+}
+.d3 {
+  background: #12cbc4;
+  padding: 10px;
+}
+.d4 {
+  background: #833471;
+  padding: 10px;
+}
+.d5 {
+  background: #c4e538;
+  padding: 10px;
+}
+.d6 {
+  background: #d980fa;
+  padding: 10px;
+}
+.d7 {
+  background: #a3cb38;
+  padding: 10px;
+}
+.d8 {
+  background: #0652dd;
+  padding: 10px;
+}
+.d9 {
+  background: #ee5a24;
+  padding: 10px;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
