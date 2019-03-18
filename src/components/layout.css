@@ -639,11 +639,32 @@ auto: sets the column or row to the width or height of its content automatically
   /*grid-template-columns: 150px 150px 150px;  //gives three columns that are each 150px wide 
   grid-template-rows: 150px 150px; // same thing but with row height */
 }
+@font-face {
+  font-family: travelingTypewriter;
+  src: url(../../assets/TravelingTypewriter.ttf);
+}
+@font-face {
+  font-family: znikomit;
+  src: url(../../assets/Znikomit.otf);
+}
+
+header h1 {
+  font-family: znikomit;
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+@font-face {
+  font-family: architext;
+  src: url(../../assets/Architex.ttf);
+}
 
 .pretty-boxes {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: travelingTypewriter;
+  font-weight: bold;
 }
 
 .d1 {

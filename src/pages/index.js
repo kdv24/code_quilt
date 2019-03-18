@@ -13,7 +13,7 @@ const IndexPage = () => (
       <div className="d6 pretty-boxes">Wise Ass App</div>
       <div className="d7 pretty-boxes">Hooks with React</div>
       <div className="d8 pretty-boxes">Web Speech API</div>
-      <div className="d9 pretty-boxes">Random IceBreakers</div>
+      <div className="d9 pretty-boxes">IceBreakers</div>
     </div>
   </Layout>
 )
