@@ -1,4 +1,5 @@
 import React from "react"
+import axios from "axios"
 
 import Layout from "../components/layout"
 
@@ -17,7 +18,12 @@ const IndexPage = () => (
       <div className="d10 pretty-boxes" style={{ display: "inherit" }}>
         <span>Exist Data</span>
         <button
-          onClick={() => console.log("allow")}
+          onClick={() => {
+            axios
+              .get("http://localhost:3001/api/getData")
+              .then(data => data.json())
+              .then(res => this.setState({ data: res.data }))
+          }}
           style={{
             backgroundColor: "lightgray",
             borderRadius: "5px",
