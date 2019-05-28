@@ -703,6 +703,10 @@ header h1 {
   background: #ee5a24;
   padding: 10px;
 }
+.d10 {
+  background: #9999ff;
+  padding: 10px;
+}
 
 @media only screen and (max-width: 480px) {
   html {
