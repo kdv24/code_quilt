@@ -14,7 +14,18 @@ const IndexPage = () => (
       <div className="d7 pretty-boxes">Hooks with React</div>
       <div className="d8 pretty-boxes">Web Speech API</div>
       <div className="d9 pretty-boxes">IceBreakers</div>
-      <div className="d10 pretty-boxes">Exist Data</div>
+      <div className="d10 pretty-boxes" style={{ display: "inherit" }}>
+        <span>Exist Data</span>
+        <button
+          onClick={() => console.log("allow")}
+          style={{
+            backgroundColor: "lightgray",
+            borderRadius: "5px",
+          }}
+        >
+          Allow
+        </button>
+      </div>
     </div>
   </Layout>
 )
